@@ -1,8 +1,8 @@
 // const config = require("./config.json");
-const Discord = require("discord.js");
+const { Client, Attachment } = require("discord.js");
 // const axios = require("axios");
 // const cheerio = require("cheerio");
-const client = new Discord.Client();
+const client = new Client();
 
 client.once("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -13,9 +13,8 @@ client.on("message", (message) => {
   if (message.content.startsWith("!ping")) {
     message.channel.send(client.ws.ping + " ms");
   }
-  if (message.content.startsWith("!랄로해봐")) {
-    var path = "./ralo.jpg";
-    const attachment = new Attachment(path);
+  if (message.content === "!랄로해봐") {
+    const attachment = new Attachment("./ralo.jpg");
     message.channel.send(attachment);
   }
 });
