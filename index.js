@@ -12,11 +12,11 @@ client.on("message", (message) => {
   if (message.content.startsWith(config.prefix + "ping")) {
     message.channel.send(client.ws.ping + " ms");
   }
-  if (message.content.startsWith(config.prefix + "랄로해봐")) {
-    var path = "./ralo.jpg";
-    const attachment = new Attachment(path);
-    msg.channel.send(attachment);
-  }
+  //   if (message.content.startsWith(config.prefix + "랄로해봐")) {
+  //     var path = "./ralo.jpg";
+  //     const attachment = new Attachment(path);
+  //     msg.channel.send(attachment);
+  //   }
 });
 
 client.login(process.env.TOKEN);
