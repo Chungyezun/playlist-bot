@@ -1,0 +1,24 @@
+{
+  "name": "playlist-bot",
+  "version": "1.0.0",
+  "description": "playlist bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chungyezun/playlist-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chungyezun/playlist-bot/issues"
+  },
+  "homepage": "https://github.com/Chungyezun/playlist-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "nodemon": "^2.0.6"
+  }
+}
