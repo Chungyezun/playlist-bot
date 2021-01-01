@@ -16,7 +16,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("!랄로해봐")) {
     var path = "./ralo.jpg";
     const attachment = new Attachment(path);
-    msg.channel.send(attachment);
+    message.channel.send(attachment);
   }
 });
 
