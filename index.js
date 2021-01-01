@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 client.once("ready", () => {
-  console.log("준비완료");
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 client.on("message", (message) => {
   console.log(message.content);
@@ -12,4 +12,4 @@ client.on("message", (message) => {
   }
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN);
