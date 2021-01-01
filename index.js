@@ -1,5 +1,5 @@
 // const config = require("./config.json");
-const { Discord, Attachment } = require("discord.js");
+const Discord = require("discord.js");
 // const axios = require("axios");
 // const cheerio = require("cheerio");
 const client = new Discord.Client();
