@@ -14,7 +14,9 @@ client.on("message", (message) => {
     message.channel.send(client.ws.ping + " ms");
   }
   if (message.content === "!랄로해봐") {
-    const attachment = new Attachment("./ralo.jpg");
+    const attachment = new Attachment(
+      "https://s3.orbi.kr/data/file/united2/ddfbb85604c94b198f580eb21bf27283.jpeg"
+    );
     message.channel.send(attachment);
   }
 });
