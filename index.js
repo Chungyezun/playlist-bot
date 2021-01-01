@@ -1,4 +1,4 @@
-const config = require("./config.json");
+// const config = require("./config.json");
 const Discord = require("discord.js");
 const axios = require("axios");
 const cheerio = require("cheerio");
@@ -9,7 +9,8 @@ client.once("ready", () => {
 });
 client.on("message", (message) => {
   console.log(message.content);
-  if (message.content.startsWith(config.prefix + "ping")) {
+  //   if (message.content.startsWith(config.prefix + "ping")) {
+  if (message.content.startsWith("!ping")) {
     message.channel.send(client.ws.ping + " ms");
   }
   //   if (message.content.startsWith(config.prefix + "랄로해봐")) {
