@@ -12,7 +12,6 @@ async function makeEmbedMessage(name) {
   let musicInfo = [];
   //   /* Get information from youtube */
   await youtube(name).then(function (x) {
-    console.log(x);
     musicInfo = x;
   });
   const channeltitle = {
