@@ -49,6 +49,9 @@ client.on("message", (message) => {
         message.channel.send("error");
       });
   }
+  if (request === "stop") {
+    message.member.voice.channel.leave();
+  }
 });
-// client.login(config.token);
-client.login(process.env.TOKEN); // 헤로쿠 전용
+client.login(config.token);
+// client.login(process.env.TOKEN); // 헤로쿠 전용
