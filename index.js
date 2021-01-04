@@ -1,4 +1,4 @@
-const config = require("./config.json");
+// const config = require("./config.json");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const music_search = require("./music-search.js");
@@ -24,7 +24,7 @@ client.once("ready", () => {
 client.on("message", (message) => {
   console.log(message.content);
   /* Message prefix */
-  if (message.content[0] !== config.prefix) return;
+  if (message.content[0] !== "!") return;
 
   /* Message Request */
   const request = message.content.substr(1).split(" ")[0];
