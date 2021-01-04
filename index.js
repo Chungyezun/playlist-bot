@@ -50,5 +50,5 @@ client.on("message", (message) => {
       });
   }
 });
-client.login(config.token);
-// client.login(process.env.TOKEN); // 헤로쿠 전용
+// client.login(config.token);
+client.login(process.env.TOKEN); // 헤로쿠 전용
