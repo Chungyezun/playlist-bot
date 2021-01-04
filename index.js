@@ -24,7 +24,7 @@ client.once("ready", () => {
 client.on("message", (message) => {
   console.log(message.content);
   /* Message prefix */
-  if (message.content[0] !== config.prefix) return;
+  if (message.content[0] !== "!") return;
 
   /* Message Request */
   const request = message.content.substr(1).split(" ")[0];
@@ -53,5 +53,5 @@ client.on("message", (message) => {
     message.member.voice.channel.leave();
   }
 });
-// client.login(config.token);
-client.login(process.env.TOKEN); // 헤로쿠 전용
+client.login(config.token);
+// client.login(process.env.TOKEN); // 헤로쿠 전용
