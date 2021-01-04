@@ -1,7 +1,7 @@
 const Youtube = require("youtube-node");
-// const config = require("./config.json");
+const config = require("./config.json");
 const youtube = new Youtube();
-const apis = [process.env.youtubeAPI1, process.env.youtubeAPI2];
+const apis = [config.youtubeAPI, config.youtubeAPI2];
 const random = Math.floor(Math.random() * apis.length);
 console.log(apis[random]);
 youtube.setKey(apis[random]);
